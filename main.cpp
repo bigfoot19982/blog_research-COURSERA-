@@ -66,7 +66,7 @@ public:
 
 template <typename C>
 auto Paginate(C& c, size_t page_size) {
-  return Paginator<typename C::iterator>(begin(c), end(c), page_size);
+  return Paginator(begin(c), end(c), page_size);
 }
 
 struct Stats {
